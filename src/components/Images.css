@@ -1,0 +1,423 @@
+.Images {
+  margin-top:50px;
+}
+
+.Images svg {
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.Images header {
+  text-align: center;
+  color:white;
+}
+
+.Images header a {
+    cursor: pointer;
+    color:#337ab7;
+}
+
+.Images h3 {
+    display:inline-block;
+    text-transform:uppercase;
+    color:white;
+    font-weight:bold;
+}
+
+.Images h2 {
+  display:inline-block;
+  text-transform:uppercase;
+  color:white;
+  font-weight:bold;
+  font-size:1.5em;
+  width:300px;
+  margin-bottom:0;
+}
+
+.MasonGall {
+  display:flex;
+}
+.Spacer {
+  width:100px;
+  float:left;
+}
+.ActiveBtn, .Btn {
+  width: 33%;
+  text-align:center;
+}
+.ActiveBtn {
+  background:white;
+}
+
+.Btn {
+  border-right: '2px solid white'
+}
+
+.Toggler {
+  position:relative;
+  margin:auto;
+  background:#161514;
+  display:flex;
+  padding-left:20px;
+  padding-right:20px;
+}
+
+.Toggler div:nth-child(3) {
+  border:none !important;
+}
+
+.Toggler a {
+  display:table-cell;
+  text-decoration:none;
+  padding:10px;
+  width:1000px;
+}
+
+.Toggler h3 {
+  color: white;
+  text-align:center;
+  margin-bottom:0;
+  text-transform:uppercase;
+}
+
+.Toggler h2 {
+  margin:0;
+}
+
+.Toggler a:hover h3 {
+  color:grey;
+}
+
+.Toggler a:hover svg {
+  color:grey;
+}
+
+.Toggler li {
+  text-align:left;
+  padding:2px;
+}
+
+.Facets h3 {
+  color:black;
+  margin-bottom:0;
+}
+
+.Facets ul {
+  padding:0;
+}
+
+.Facets a{
+  text-decoration: none;
+  color:black;
+}
+
+.Active {
+border: unset !important;
+color:white !important;
+background: white;
+}
+
+.Active h3, .Active svg {
+  color:black;
+}
+
+.Active:hover h3 {
+  color:black !important;
+}
+
+.ActiveBtn .Arrow:hover {
+  color:grey;
+}
+
+.Collection {
+  display: flex;
+  padding: 10px;
+}
+
+.Collection h4 {
+  margin-top:0;
+}
+
+.Module{
+    background:black;
+    color:white;
+    width:100%;
+    text-align:center;
+    /* display:table; */
+    position:relative;
+    padding-top:100%;
+    overflow:hidden;
+}
+
+.VertLine {
+  content:"";
+  position:absolute;
+  z-index:-1;
+  top:0;
+  right:0;
+  bottom:0;
+  border-left:6px dotted #999999;
+}
+
+.ParColumn {
+  position:relative;
+  text-align:center;
+  padding-left: 20px !important;
+  padding-right:20px !important;
+}
+
+.ParColumn div {
+  margin-right:0 !important;
+  margin-left:0 !important;
+}
+
+/* .Module:before {
+  font-family: FontAwesome;
+  font-size:2em;
+  position:absolute;
+  content: "\f107";
+  color: #9999;
+  left:0;
+  right:0;
+  top:-20px;
+} */
+
+.Module a {
+  background-size:cover !important;
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  text-decoration:none;
+}
+
+.Module h2 {
+  display:table-cell;
+  vertical-align:middle;
+  width:100%;
+  font-size:1em;
+}
+
+.ModOverlay {
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+
+
+.Module a h2 {
+  background:rgba(0,0,0,0.5);
+  padding:10px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.Module svg {
+  color:white;
+}
+
+.Grid {
+  display:flex;
+  margin-top:20px;
+}
+
+.Grid h3 {
+  color:black;
+}
+
+.CollectionRow {
+  margin-bottom:20px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left:0;
+  margin-top:0;
+  padding: 15px;
+}
+
+.BoxActive {
+  display:none;
+  border: solid 1px black;
+  opacity: 1.0;
+  transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  height:100%;
+}
+
+.BoxHidden {
+  display:none;
+  transition-property: all;
+	transition-duration: 0s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  opacity: 0.0;
+  height:0px;
+  width:0px;
+  padding: 0;
+  margin:0;
+}
+
+.CollectionModule {
+  padding:10px;
+  background: rgba(0,0,0,0.1);
+}
+
+.CollectionModule a {
+  color:black;
+  text-decoration:none;
+}
+
+.Toggler li a{
+  border: none;
+  padding: 0;
+}
+
+.LoadMore {
+  height:100px;
+  display:table;
+  text-align:center;
+  width:100%;
+  position:absolute;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#999999+0,cecece+25&0+0,1+25 */
+background: -moz-linear-gradient(top, rgba(153,153,153,0) 0%, rgba(206,206,206,1) 25%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(153,153,153,0) 0%,rgba(206,206,206,1) 25%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(153,153,153,0) 0%,rgba(206,206,206,1) 25%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00999999', endColorstr='#cecece',GradientType=0 ); /* IE6-9 */
+}
+
+.LoadMore a {
+  display:table-cell;
+  vertical-align:middle;
+}
+
+.CatRow {
+  margin:auto !important;
+}
+
+@media only screen and (max-width: 1500px) {
+  .Module h1 {
+    margin-bottom:0;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .Module h1 {
+    margin-bottom:0;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .Module:first-child a h2 {
+    display:none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .Module {
+    overflow:visible;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .Gallery {
+    margin:auto;
+  }
+  .Images {
+    margin:auto;
+    padding-top:80px;
+  }
+  .Toggler {
+    padding-top:10px;
+  }
+  .Toggler a {
+    font-size: 16px;
+    padding: 0;
+    padding-bottom:10px;
+  }
+  .Toggler h2 {
+    margin-top:0;
+    margin-bottom:5px;
+    text-align:center;
+  }
+  .Toggler h3 {
+    margin-top:0;
+    margin-bottom:0;
+    font-size:12px;
+  }
+  .CollColumn {
+    width:100% !important;
+    text-align:center;
+  }
+  .CollColumn div {
+    font-size:14px;
+    margin-top:10px;
+    text-align:left;
+  }
+  .CollColumn:first-child a {
+    display:inline-block;
+    height:150px;
+    overflow: hidden;
+    width:100%;
+  }
+  .CollColumn:first-child a img{
+    width:100%;
+  }
+  .ParColumn {
+    width:100% !important;
+    margin-bottom:50px;
+  }
+  .ParRow {
+    max-width:1300px !important;
+  }
+  .Module {
+    height:200px;
+    padding-top:0;
+  }
+  .Module a h2 {
+    position:relative;
+  }
+  .Btn, .ActiveBtn {
+    padding: 20px;
+  }
+  .ActiveBtn span, .Btn span {
+    display:none;
+  }
+  .Module:first-child a h2 {
+    display:inline;
+  }
+  .ParColumn:after {
+    border-top:4px dotted black;
+    visibility: visible !important;
+    position:absolute;
+    width:100%;
+    bottom:-30px;
+    left: 0;
+  }
+  .VertLine {
+    display:none;
+  }
+  .Collection {
+    display: block;
+    text-align: center;
+  }
+  .Collection a img{
+    width:50%;
+  }
+  .CollectionModule {
+    font-size:14px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .Btn, .ActiveBtn {
+    padding: 5px;
+  }
+}

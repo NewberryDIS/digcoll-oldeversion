@@ -1,0 +1,264 @@
+.Header {
+	height:500px;
+	position:relative;
+	background-size:cover;
+	background-position:center;
+  padding-top:50px;
+}
+
+.Header button, input[type="button"] {
+	font-family: "Basic Commercial W01";
+	background-color: rgba(29,26,26,0.5);
+	color: white;
+	border-radius: 0.25em;
+	display: inline-block;
+	border: 1px solid #6e6e6e;
+	font-weight: bold;
+    width:30px;
+    height:30px;
+    cursor:pointer;
+    margin-left:10px;
+}
+
+.Header input[type="submit"] {
+  font-family: "FontAwesome";
+  margin-left:-50px;
+  background:none;
+  border:none;
+  color:white;
+  font-size:1.5em;
+  cursor:pointer;
+}
+
+.Header input::placeholder {
+  color:white;
+  opacity:0.5;
+}
+
+.Header form {
+  line-height:2;
+  display:inline-block;
+  width:100%;
+}
+
+.Gradient {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 33%;
+	background: -moz-linear-gradient(top, rgba(22,21,20,0) 0%,rgba(22,21,20,0.8) 50%,#161514 100%);
+	background: -webkit-linear-gradient(top, rgba(22,21,20,0) 0%,rgba(22,21,20,0.8) 50%,#161514 100%);
+	background: -o-linear-gradient(top, rgba(22,21,20,0) 0%,rgba(22,21,20,0.8) 50%,#161514 100%);
+	background: -ms-linear-gradient(top, rgba(22,21,20,0) 0%,rgba(22,21,20,0.8) 50%,#161514 100%);
+	background: linear-gradient(to bottom, rgba(22,21,20,0) 0%,rgba(22,21,20,0.8) 50%,#161514 100%);
+}
+
+.HeaderLogo a {
+  float:left;
+  width:15%;
+  display:inline-block;
+  margin-right:40px;
+}
+
+.HeaderLogo h2 {text-transform:uppercase; font-family:"Basic Commercial W01" !important; font-weight:bold; letter-spacing:3px; font-size:1.6em; margin-top: 35px; line-height:1.4;}
+.HeaderLogo img {width:100%;}
+
+.HeaderContent {
+	width: 650px;
+	position: absolute;
+	top: 20%;
+	right: 0;
+	left: 0;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 30px;
+  padding-top:0;
+	background-color: #161514;
+	cursor: default;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: rgba(0,0,0,0.7);
+	color: #e8e4e2;
+}
+
+.LogoText h3 {
+  position:absolute;
+  right:10px;
+  top:-15px;
+  color:red;
+}
+
+.Searchbox {
+  color:white; 
+  width:90%; 
+  border-radius:10px; 
+  background:rgba(0,0,0,0.3); 
+  padding:10px; 
+  font-size:1.5em;
+}
+.Searchbox::placeholder {
+  color: rgba(255,255,255,0.5);
+}
+
+.HeaderDescription {
+  position:absolute;
+  bottom:20px;
+  right:100px;
+  color:#337ab7;
+  text-align:right;
+  max-width:500px;
+  font-size:12px;
+}
+
+.HeaderDescription a {
+  color:white;
+  text-decoration:none;
+}
+
+.HeaderDescription a:hover {
+  text-decoration:underline;
+}
+
+.Toggler2 {
+  position:absolute;
+  display:flex;
+  left:0;
+  right:0;
+  bottom:0;
+  width:50%;
+  margin:auto;
+}
+
+.Toggler2 a {
+  margin:auto;
+  text-align:center;
+  color:black;
+  background: rgba(255,255,255,0.5);
+  width:500px;
+  margin-bottom:10px;
+  text-decoration:none;
+}
+
+svg {
+  margin-left: 20px;
+  margin-right: 20px;
+  color: black;
+  cursor: pointer;
+}
+
+.Active {
+  color:white;
+  background:rgba(0,0,0,0.5);
+}
+
+.Active svg {
+  color:white;
+}
+
+.HeaderFooter {
+  text-transform:uppercase;
+  text-align:center;
+}
+
+.HeaderFooter h4 {
+  margin-bottom:0;
+}
+
+.HeaderFooter a {
+  color:white;
+}
+
+.HeaderFooter span {
+  font-size:0.9em;
+}
+
+.Contact {
+  margin-top:40px;
+}
+
+.DescripText {
+  text-transform: none;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+  .Header{
+    height:300px;
+  }
+  .HeaderContent {
+    width:100%;
+    height:300px;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    padding: 30px;
+  }
+  
+  .Header input[type="submit"] {
+    margin-left: -40px;
+    font-size: 1em;
+  }
+  .LogoText {
+    display:none;
+  }
+  .HeaderLogo {
+    margin-top:20px;
+    text-align:center;
+  }
+  .HeaderLogo a {
+    float:none;
+    width:20%;
+    margin:0;
+  }
+  form {
+    /* position:absolute; */
+    font-size:18px;
+    margin-top:0;
+  }
+  .HeaderFooter h4 {
+    display:none;
+  }
+
+  .DescripText {
+    display:none;
+  }
+  .Contact {
+    display:block;
+    /* position:absolute; */
+    margin-top:20px;
+  }
+  .Contact span {
+    font-size:10px;
+    max-width:40%;
+  }
+  .Searchbox {
+    margin-top:10px;
+    margin-left:0;
+    width: 80%;
+    font-size: 1em;
+  }
+  .HeaderDescription {
+    right:20px;
+    font-size:10px;
+    width:90%;
+  }
+  .HeaderDescription a {
+    font-size:10px;
+  }
+  .UserSurvey {
+    left:0;
+    font-size:12px;
+  }
+}
+.Dropdown {
+  margin: 7px 5px;
+  font-size: 20px;
+  background: transparent;
+  color: white;
+  border-radius: 6px;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+  border-right: 1px solid rgba(255,255,255,0.5);
+}

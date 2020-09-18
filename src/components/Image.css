@@ -1,0 +1,30 @@
+.Image {
+  margin: 10px;
+  display: inline-block;
+  width: 225px;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+  margin-top:40px;
+}
+
+.ImageLoading {
+  display: none;
+}
+
+.Image img {
+  width: 200px;
+  margin-bottom:10px;
+}
+
+.Image figcaption {
+  color: black;
+  font-family: "Basic Commercial W01", sans-serif;
+  text-transform: uppercase;
+  font-weight:bold;
+  max-width:220px;
+  margin:auto;
+  font-size:1rem;
+  text-align:center;
+}
+
